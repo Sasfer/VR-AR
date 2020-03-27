@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ef631e5427bd9a4a809d3546d0d173c
+guid: b01a6519820f4c84e911a4848cffaa64
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
@@ -10,8 +10,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Car Texture 2
-    second: {fileID: 2800000, guid: 8f70016e75f8a8040a631caeed573a7c, type: 3}
+      name: cafe2
+    second: {fileID: 2800000, guid: 91ca4aaeaa68fd148a7be448006898de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: verde2
+    second: {fileID: 2800000, guid: efadb05c436e6b54fad4873587c2097c, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
