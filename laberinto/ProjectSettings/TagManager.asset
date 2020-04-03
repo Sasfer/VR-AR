@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - letreroInicio
+  - letreroGanar
+  - letreroMorir
+  - letreroPerder
+  - piedra
+  - cesped
+  - tierra
+  - agua
+  - inicio
+  - fin
+  - municion
+  - bomba
+  - vida
   layers:
   - Default
   - TransparentFX

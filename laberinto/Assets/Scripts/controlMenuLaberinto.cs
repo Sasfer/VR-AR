@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class controlMenuLaberinto : MonoBehaviour{
     
     void Start(){
-        FindObjectOfType<audio>().Play("menu");
+        FindObjectOfType<audio>().Play("fondo");
     }
 
     public void CambiarEscena(string nombreEscena){
@@ -20,6 +20,6 @@ public class controlMenuLaberinto : MonoBehaviour{
     }
 
     public void Click(){
-    	FindObjectOfType<audio>().Play("seleccion");
+    	FindObjectOfType<audio>().Play("click");
     }
 }
