@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/laberinto.unity
+- path: Assets/Scenes/menuLaberinto.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
