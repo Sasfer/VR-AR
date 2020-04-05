@@ -15,11 +15,7 @@ public class target : MonoBehaviour{
 			enemigo = float.Parse(enemy.text);
 			enemigo = enemigo + 1f;
 			enemy.text = "" + enemigo.ToString("f0");
-			Die();
+			gameObject.SetActive (false);
 		}
-	}
-
-	void Die(){
-		Destroy(gameObject);
 	}
 }

@@ -22,6 +22,9 @@ TagManager:
   - begin
   - end
   - enemy
+  - salir
+  - reiniciar
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX

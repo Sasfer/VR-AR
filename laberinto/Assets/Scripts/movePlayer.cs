@@ -11,8 +11,9 @@ public class movePlayer : MonoBehaviour
     public CharacterController controller;
     public TextMesh time, life, weapon, enemy;
     public float municion, vida, tiempo, enemigo;
+    public ParticleSystem sal, ren;
     public GameObject letreroInicio, letreroPerder, letreroGanar, 
-    letreroMorir, letreroSalir, letreroReiniciar; 
+    letreroMorir, letreroSalir, letreroReiniciar, salir, reiniciar; 
 
     // Se da un timepo de espera para visualisar algun letrero
     IEnumerator Espera(GameObject letrero){
@@ -21,7 +22,7 @@ public class movePlayer : MonoBehaviour
     }
 
     void Start(){
-        speed = 12f;
+        speed = 10f;
 
         municion = 10f;
         vida = 5f;
@@ -52,7 +53,7 @@ public class movePlayer : MonoBehaviour
             float z = Input.GetAxis("Vertical");
 
             Vector3 mover = transform.right * x + transform.forward * z;
-
+            mover.y = 0f;
             controller.Move(mover * speed * Time.deltaTime);
         }
 
@@ -80,7 +81,7 @@ public class movePlayer : MonoBehaviour
     		
     		case "reiniciar":
             	movimiento = false;
-            	StartCoroutine(Espera(letreroSalir));
+            	StartCoroutine(Espera(letreroReiniciar));
             	SceneManager.LoadScene("laberinto3D");
     			break;
 
@@ -99,8 +100,10 @@ public class movePlayer : MonoBehaviour
     			break;
 
     		case "municion":
+    			municion = float.Parse(weapon.text);
     			municion += 1.0f;
-            	enemy.text = "" + municion.ToString("f0");
+            	weapon.text = "" + municion.ToString("f0");
+            	FindObjectOfType<audio>().Play("municion");
             	objeto.gameObject.SetActive(false); 
     			break;
 
@@ -138,6 +141,8 @@ public class movePlayer : MonoBehaviour
 	            letreroReiniciar.SetActive(false);
 	            letreroInicio.SetActive(false);
 	            letreroGanar.SetActive(false);
+	            salir.SetActive(false);
+           		reiniciar.SetActive(false);
 
 	            if (letIni == true)
 	                letreroInicio.SetActive(true);
@@ -157,6 +162,10 @@ public class movePlayer : MonoBehaviour
     		case "end":
     			fin = true;
            		letFin = false;
+           		salir.SetActive(true);
+           		reiniciar.SetActive(true);
+           		sal.Play();
+           		ren.Play();
             	letreroGanar.SetActive(false);
     			break;
 

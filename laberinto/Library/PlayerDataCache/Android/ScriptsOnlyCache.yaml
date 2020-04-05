@@ -1,13 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CFX_AutoDestructShuriken
     - GvrEditorEmulator
     - GvrPointerInputModule
     - GvrReticlePointer
+    - arma
     - audio
     - controlMenuLaberinto
     - fps
     - movePlayer
+    - rayViewer
+    - target
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.EditorToolbar
     - UnityEditor.ProBuilder.ProBuilderEditor
@@ -41,7 +45,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -58,28 +66,38 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9834}
+      Script: {instanceID: 9854}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 10392}
+      Script: {instanceID: 10088}
     - Class: 114
-      Script: {instanceID: 10684}
+      Script: {instanceID: 10166}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 10426}
     - Class: 114
-      Script: {instanceID: 11860}
+      Script: {instanceID: 10722}
     - Class: 114
-      Script: {instanceID: 11906}
+      Script: {instanceID: 11106}
     - Class: 114
-      Script: {instanceID: 12246}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 11674}
     - Class: 114
-      Script: {instanceID: 59444}
+      Script: {instanceID: 11856}
     - Class: 114
-      Script: {instanceID: 59450}
+      Script: {instanceID: 11914}
+    - Class: 114
+      Script: {instanceID: 11960}
+    - Class: 114
+      Script: {instanceID: 12302}
+    - Class: 114
+      Script: {instanceID: 12418}
+    - Class: 114
+      Script: {instanceID: 20270}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -90,6 +108,10 @@ ScriptsOnlyBuild:
     - Class: 143
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -123,27 +145,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9834}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 10074}
+      Script: {instanceID: 10106}
     - Class: 114
-      Script: {instanceID: 10122}
+      Script: {instanceID: 10154}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 10166}
     - Class: 114
-      Script: {instanceID: 10392}
+      Script: {instanceID: 10426}
     - Class: 114
-      Script: {instanceID: 10684}
+      Script: {instanceID: 10722}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11860}
+      Script: {instanceID: 11914}
     - Class: 114
-      Script: {instanceID: 11906}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 12246}
+      Script: {instanceID: 12302}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -161,16 +183,34 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a89241b01571717cd508ad3b30dc9af3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: arma
+  - hash:
+      serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: 8b2d4e06e046ec1dc0a99d91bec0c17a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo
+  - hash:
+      serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 671420ad2c33f1ddaf6d076461adf15a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_Translate
   - hash:
       serializedVersion: 2
       Hash: 2aeeec1b1a144c469cd2d37776bc2315
@@ -225,6 +265,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 78bb2599d92aa4440ad05d2917ac89da
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: movePlayer
   - hash:
       serializedVersion: 2
       Hash: 84b31b71fcfc0d02bf4204522ea292b1
@@ -341,6 +387,12 @@ ScriptsOnlyBuild:
     className: DemoInputManager
   - hash:
       serializedVersion: 2
+      Hash: 7d37d09af363b70d55d9408e5fb34050
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_New
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -365,6 +417,12 @@ ScriptsOnlyBuild:
     className: DemoInfoPanel
   - hash:
       serializedVersion: 2
+      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_DeleteAfterDelay
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -381,6 +439,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 1d0beb1a2d4edee4c06b6835632e83a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoStopLoopedEffect
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -455,6 +519,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 4aac268d7e435f7a65add91aaba819a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RandomDir
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -477,6 +547,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrAllEventsTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 3f5031037e63abe5dcf87c278e01a4de
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RotateCamera
   - hash:
       serializedVersion: 2
       Hash: e9389e944eb81a3a9df56fcdb09ce6a9
@@ -503,10 +579,22 @@ ScriptsOnlyBuild:
     className: DemoSeeThroughController
   - hash:
       serializedVersion: 2
+      Hash: 5d27c6e85ec89cfab8577e9e26695e88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoDestructShuriken
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 4aac268d7e435f7a65add91aaba819a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_RandomDir
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -519,6 +607,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrTrackedController
+  - hash:
+      serializedVersion: 2
+      Hash: 660deb0ce569359218f0ba85b7ce0e3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_LightIntensityFade
   - hash:
       serializedVersion: 2
       Hash: 1f8286dbbba9b39b9120dec32b8944e4
@@ -623,6 +717,12 @@ ScriptsOnlyBuild:
     className: GvrControllerTooltipsSimple
   - hash:
       serializedVersion: 2
+      Hash: 0dac41439e759dd1af1d6d6b9cdb17ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: fps
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -653,6 +753,12 @@ ScriptsOnlyBuild:
     className: GvrRecenterOnlyController
   - hash:
       serializedVersion: 2
+      Hash: 79f1e4d923cfc803b34c05ae2cb73dac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_LightFlicker
+  - hash:
+      serializedVersion: 2
       Hash: 0aefaa69b3866ee3ae66f07ddb7f44ad
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleVR.VideoDemo
@@ -669,6 +775,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Gvr.Internal
     className: EmulatorManager
+  - hash:
+      serializedVersion: 2
+      Hash: a88f7418e63f2f83acab45555824c700
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: target
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -717,6 +829,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleVR.VideoDemo
     className: ScrubberEvents
+  - hash:
+      serializedVersion: 2
+      Hash: dd7780efe480b95c7be3094f9d1d4270
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_Demo_Wall
+  - hash:
+      serializedVersion: 2
+      Hash: f1b1d314ca3b7b03e29e12762db58162
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WFX_BulletHoleDecal
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -789,6 +913,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 263025083d0a7e8d3b9c0c9ab88a743d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_SpawnSystem
   - hash:
       serializedVersion: 2
       Hash: f0077b931a26a7eeaf5e245c7ef51ec4
@@ -905,16 +1035,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 0dac41439e759dd1af1d6d6b9cdb17ea
+      Hash: 9e9f3e18e0d0de497669090fb0a96d37
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: fps
-  - hash:
-      serializedVersion: 2
-      Hash: b427478389bb8e015771b828a2d2da73
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: movePlayer
+    className: rayViewer
   platform: 13
   scenePathNames:
   - Assets/Scenes/menuLaberinto.unity
