@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class controlMenuLaberinto : MonoBehaviour{
     
     void Start(){
+        FindObjectOfType<audio>().Stop("fondo");
         FindObjectOfType<audio>().Play("fondo");
     }
 

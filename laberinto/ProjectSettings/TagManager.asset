@@ -17,6 +17,11 @@ TagManager:
   - municion
   - bomba
   - vida
+  - letreroSalir
+  - letreroReiniciar
+  - begin
+  - end
+  - enemy
   layers:
   - Default
   - TransparentFX
