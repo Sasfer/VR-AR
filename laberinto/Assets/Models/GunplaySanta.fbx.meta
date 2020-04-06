@@ -14,7 +14,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Gradient_Pallet
-    second: {fileID: 2800000, guid: a0e7af8aa054b4e4f84ea49cba66a2f7, type: 3}
+    second: {fileID: 2800000, guid: 3882dc17a1b020041b30e7fc927c16b9, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

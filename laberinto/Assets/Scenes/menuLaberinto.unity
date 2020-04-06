@@ -765,7 +765,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.05
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -1822,6 +1822,48 @@ MonoBehaviour:
     pitch: 1
     fuente: {fileID: 0}
     loop: 0
+  - nombre: disparo
+    clip: {fileID: 8300000, guid: b494cf10c2817e84a94728506c00e7e9, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 0
+  - nombre: bomba
+    clip: {fileID: 8300000, guid: 69a83224f4ddec945b6c50162ccafb58, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 0
+  - nombre: bosque
+    clip: {fileID: 8300000, guid: a6dd020700a140440bd2f9b14cd7bc01, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 1
+  - nombre: municion
+    clip: {fileID: 8300000, guid: c9f32b9055c0b514bbbfe742c8c4b3dd, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 0
+  - nombre: vida
+    clip: {fileID: 8300000, guid: 65341881d9726f94593f1f745e95eed6, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 0
+  - nombre: agua
+    clip: {fileID: 8300000, guid: a53ccea14a44a0e4294548eab1afaff4, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 1
+  - nombre: tierra
+    clip: {fileID: 8300000, guid: e08881d1d60f72342b6303a7ed3a9385, type: 3}
+    volume: 0.5
+    pitch: 1
+    fuente: {fileID: 0}
+    loop: 1
 --- !u!4 &1320365393
 Transform:
   m_ObjectHideFlags: 0

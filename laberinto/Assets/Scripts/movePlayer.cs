@@ -15,6 +15,8 @@ public class movePlayer : MonoBehaviour
     public GameObject letreroInicio, letreroPerder, letreroGanar, 
     letreroMorir, letreroSalir, letreroReiniciar, salir, reiniciar; 
 
+    public GameObject e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12;
+
     // Se da un timepo de espera para visualisar algun letrero
     IEnumerator Espera(GameObject letrero){
         letrero.SetActive(true);
@@ -22,9 +24,9 @@ public class movePlayer : MonoBehaviour
     }
 
     void Start(){
-        speed = 10f;
+        speed = 8f;
 
-        municion = 10f;
+        municion = 20f;
         vida = 5f;
         enemigo = 0f;
         tiempo = 120f;
@@ -41,6 +43,9 @@ public class movePlayer : MonoBehaviour
         movimiento = true;
 
         FindObjectOfType<audio>().Stop("fondo");
+        FindObjectOfType<audio>().Stop("bosque");
+        FindObjectOfType<audio>().Stop("tierra");
+        FindObjectOfType<audio>().Stop("agua");
         FindObjectOfType<audio>().Play("fondo");
 
     }
@@ -176,7 +181,7 @@ public class movePlayer : MonoBehaviour
             	FindObjectOfType<audio>().Pause("bosque");
     			break;
 
-    		case "bosque":
+    		case "cesped":
     			FindObjectOfType<audio>().Play("bosque");
             	FindObjectOfType<audio>().Pause("tierra");
             	FindObjectOfType<audio>().Pause("agua");
@@ -195,6 +200,66 @@ public class movePlayer : MonoBehaviour
 	            FindObjectOfType<audio>().Pause("fondo");
 	            FindObjectOfType<audio>().Pause("agua");
 	            FindObjectOfType<audio>().Pause("bosque");
+    			break;
+
+    		case "e1":
+    			e1.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e2":
+    			e2.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e3":
+    			e3.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e4":
+    			e4.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e5":
+    			e5.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e6":
+    			e6.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e7":
+    			e7.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e8":
+    			e8.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e9":
+    			e9.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e10":
+    			e10.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e11":
+    			e11.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
+    			break;
+
+    		case "e12":
+    			e12.SetActive(true);
+    			objeto.gameObject.SetActive(false); 
     			break;
 
     		default:
